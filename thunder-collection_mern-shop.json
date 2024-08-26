@@ -1,0 +1,583 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "mern-shop",
+    "dateExported": "2024-01-11T18:42:46.590Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "f7948e6b-4172-49aa-849e-7572d9516b53",
+            "name": "USERS",
+            "containerId": "",
+            "created": "2023-06-14T00:01:09.867Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "95e1b825-38b4-4678-a608-df38477dd3dc",
+            "name": "PRODUCTS",
+            "containerId": "",
+            "created": "2023-06-15T17:38:30.221Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "4d7f34e8-a715-4abd-ae03-e01832dee2cd",
+            "name": "BLOG",
+            "containerId": "",
+            "created": "2023-08-26T22:35:05.825Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "88a1f77e-c511-4867-8918-6f3f6fa55028",
+            "name": "PROD_CATEGORIES",
+            "containerId": "",
+            "created": "2023-09-16T22:21:24.798Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "64af220a-a109-46f4-a0e6-a9122e078afa",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "f7948e6b-4172-49aa-849e-7572d9516b53",
+            "name": "show users",
+            "url": "{{base_url}}user",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-05-13T21:05:55.508Z",
+            "modified": "2023-08-23T00:51:48.564Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Njk3Nzk3NzY3NzQ5MWEzZTQ3YTNkNSIsImlhdCI6MTY4NDc2OTg3MywiZXhwIjoxNjg1MDI5MDczfQ.ORiTFNvrHSzBgfGziq0OX_baKbje_02H3i8ohEYUH3s"
+                }
+            ],
+            "params": [],
+            "tests": [
+                {
+                    "type": "set-env-var",
+                    "custom": "json.",
+                    "action": "setto",
+                    "value": "{{variable}}"
+                }
+            ]
+        },
+        {
+            "_id": "17bbb7fa-057d-4575-802b-fbfddc87571b",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "f7948e6b-4172-49aa-849e-7572d9516b53",
+            "name": "refresh-token",
+            "url": "localhost:4000/api/user/refresh",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-10T21:36:32.584Z",
+            "modified": "2023-06-14T00:01:13.784Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2343dafb-e35f-4d76-aa2a-758f40225e54",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "f7948e6b-4172-49aa-849e-7572d9516b53",
+            "name": "logout",
+            "url": "localhost:4000/api/user/logout",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-06-11T16:06:16.699Z",
+            "modified": "2023-06-14T00:01:14.600Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cfef433f-eced-4f91-8f19-4d0828b8f04f",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "f7948e6b-4172-49aa-849e-7572d9516b53",
+            "name": "register-user",
+            "url": "localhost:4000/api/user/register",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-05-09T18:24:29.819Z",
+            "modified": "2023-09-14T00:37:32.506Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"firstname\": \"user5\",\n  \"lastname\": \"user5\",\n  \"email\": \"user5@gmail.com\",\n  \"mobile\": 222252224,\n  \"password\": \"user555\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "76bc592f-8372-4353-be94-4b81bf7ff1b5",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "95e1b825-38b4-4678-a608-df38477dd3dc",
+            "name": "get-products",
+            "url": "localhost:4000/api/product",
+            "method": "GET",
+            "sortNum": 45000,
+            "created": "2023-06-15T18:11:43.165Z",
+            "modified": "2023-08-26T21:08:23.268Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c0384122-2372-4ffe-8733-878be8683182",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "f7948e6b-4172-49aa-849e-7572d9516b53",
+            "name": "login",
+            "url": "{{base_url}}user/login",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-05-11T22:12:45.460Z",
+            "modified": "2024-01-11T18:27:35.384Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"user1@gmail.com\",\n  \"password\": \"user111\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b6c2dac8-8b23-4bd5-8c20-bccc4794b1a7",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "f7948e6b-4172-49aa-849e-7572d9516b53",
+            "name": "forgot-password-token",
+            "url": "localhost:4000/api/user/forgot-password-token",
+            "method": "POST",
+            "sortNum": 55000,
+            "created": "2023-08-21T00:18:32.209Z",
+            "modified": "2023-08-21T00:32:35.268Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"firstname\": \"Santiago\",\n  \"lastname\": \"Rodas\",\n  \"email\": \"santiagorodas688@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "08bcc17c-7ccf-4916-82d3-a8c12e445e9b",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "f7948e6b-4172-49aa-849e-7572d9516b53",
+            "name": "update-user",
+            "url": "localhost:4000/api/user/edit-user",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-05-22T16:04:27.008Z",
+            "modified": "2023-06-14T00:01:18.127Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Njk3Nzk3NzY3NzQ5MWEzZTQ3YTNkNSIsImlhdCI6MTY4NDc3MTg5NiwiZXhwIjoxNjg1MDMxMDk2fQ.5mfnstgIc7Yruu0JXU7rAGWYbt83lzHyAxodRIs3aes"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"firstname\": \"santiago\",\n  \"lastname\": \"rodas\",\n  \"email\": \"santiago@gmail.com\",\n  \"mobile\": 5568412\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1172d92e-4b5a-4716-ab9f-484c4ef0eb71",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "95e1b825-38b4-4678-a608-df38477dd3dc",
+            "name": "get-a-product",
+            "url": "localhost:4000/api/product/648b54f59783223d439e7489",
+            "method": "GET",
+            "sortNum": 67500,
+            "created": "2023-06-15T18:05:11.522Z",
+            "modified": "2023-06-15T18:17:21.663Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c8f49350-cf74-4afe-a2b5-40801bc97884",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "f7948e6b-4172-49aa-849e-7572d9516b53",
+            "name": "block-user",
+            "url": "localhost:4000/api/user/unblock-user/646977977677491a3e47a3d5",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2023-06-09T18:03:13.467Z",
+            "modified": "2023-06-14T00:01:19.080Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ODRkNDk5ZmVmODQwYTYzNzAyMjVkNCIsImlhdCI6MTY4NjQyNjgyMSwiZXhwIjoxNjg2Njg2MDIxfQ.cJWs6uLCvg6BqF5-Nsuva1DofT6fWR--sADatCPwh8I"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "131da768-8925-47c5-9b48-2a513b10100a",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "f7948e6b-4172-49aa-849e-7572d9516b53",
+            "name": "change-password",
+            "url": "localhost:4000/api/user/password",
+            "method": "PUT",
+            "sortNum": 75000,
+            "created": "2023-08-20T22:02:20.892Z",
+            "modified": "2023-08-20T22:29:33.283Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Njk3Nzk3NzY3NzQ5MWEzZTQ3YTNkNSIsImlhdCI6MTY5MjU3MDUxMiwiZXhwIjoxNjkyNjU2OTEyfQ.ngrpOufvbxgpFYclpNZZWP-4jmV32DzPtBkr9SI_HGU"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"password\": \"hasklig\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "848618c9-a15d-47a9-a343-6e84b7238ca9",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "f7948e6b-4172-49aa-849e-7572d9516b53",
+            "name": "reset-password",
+            "url": "http://localhost:4000/api/user/reset-password/64f06ddb834486c3e07eab22eaebbefe9bb07aef7a9be989d0569e3742c7a6ee",
+            "method": "PUT",
+            "sortNum": 77500,
+            "created": "2023-08-22T23:54:11.491Z",
+            "modified": "2023-08-23T00:00:53.739Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"santiagorodas688@gmail.com\",\n  \"password\": \"santi333\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ccd8764f-6942-415f-b908-a02bdaed0d3b",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "f7948e6b-4172-49aa-849e-7572d9516b53",
+            "name": "delete user",
+            "url": "localhost:4000/api/user/645ffe554752c80cdf064b1b",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2023-05-13T21:52:08.070Z",
+            "modified": "2023-06-14T00:01:20.175Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9f3a239b-cbea-4415-a652-b49ac6f8c08e",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "95e1b825-38b4-4678-a608-df38477dd3dc",
+            "name": "create-product",
+            "url": "localhost:4000/api/product",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-06-15T17:38:42.507Z",
+            "modified": "2023-06-19T22:41:08.625Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Njk3Nzk3NzY3NzQ5MWEzZTQ3YTNkNSIsImlhdCI6MTY4NzIxMzc2MSwiZXhwIjoxNjg3MzAwMTYxfQ.l-0c47TpsyQknOQPrGg10_yzavK1d6fzuMJI1AH8qXg"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"notebook asus\",\n  \"category\": \"notebooks\",\n  \"brand\": \"asus\",\n  \"description\": \"asus tuf fx5\",\n  \"price\": 9000,\n  \"quantity\": 50,\n  \"color\": \"white\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4ac3cfc4-90a2-410b-93a7-3c2e624eaad2",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "95e1b825-38b4-4678-a608-df38477dd3dc",
+            "name": "update-product",
+            "url": "localhost:4000/api/product/648b5beb04997a1786b1b2a9",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2023-06-16T17:20:04.831Z",
+            "modified": "2023-06-16T18:15:31.788Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Njk3Nzk3NzY3NzQ5MWEzZTQ3YTNkNSIsImlhdCI6MTY4NjkzOTIyNCwiZXhwIjoxNjg3MDI1NjI0fQ.7QpFRnb0uJYyeIg2t5Z0jLVI7y_7H_VrWkAAHU3j0Ao"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"color\": \"yellow\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "776e2a30-42e3-4cf6-a987-c526e1fa9db5",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "95e1b825-38b4-4678-a608-df38477dd3dc",
+            "name": "delete-product",
+            "url": "localhost:4000/api/product/648c9d77505824c9c99f7a0f",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2023-06-16T17:28:59.747Z",
+            "modified": "2023-06-16T17:41:04.150Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3da5a416-2612-4c47-a736-07e0e2ae10ce",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "4d7f34e8-a715-4abd-ae03-e01832dee2cd",
+            "name": "create-blog",
+            "url": "{{base_url}}blog",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-08-26T22:35:27.819Z",
+            "modified": "2023-08-30T18:20:27.378Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "my blog 4"
+                    },
+                    {
+                        "name": "category",
+                        "value": "travel"
+                    },
+                    {
+                        "name": "description",
+                        "value": "my description 4"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTJhZmYzNDdiMTcyNDdiZWE3OWNlYyIsImlhdCI6MTY5MzQxOTQ0NCwiZXhwIjoxNjkzNTA1ODQ0fQ.eB3IPrAfhwgndwONrvWBU3b9Eya02yUzjl0XbB3aALs"
+            },
+            "tests": []
+        },
+        {
+            "_id": "826ddd60-9491-4209-9752-2c3090c41919",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "4d7f34e8-a715-4abd-ae03-e01832dee2cd",
+            "name": "update-blog",
+            "url": "{{base_url}}blog/64ef87be25477308fb288e65",
+            "method": "PUT",
+            "sortNum": 130000,
+            "created": "2023-08-30T18:23:49.314Z",
+            "modified": "2023-09-02T02:29:16.582Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "category",
+                        "value": "fitness"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTJhZmYzNDdiMTcyNDdiZWE3OWNlYyIsImlhdCI6MTY5MzYxODg2MCwiZXhwIjoxNjkzNzA1MjYwfQ.pahWGICEWGNTNliIxcdKFeCux6Ozmm4fLc-ziKHirXc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "83ca6ce2-0e63-4f69-a932-a449a0cfbf1e",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "4d7f34e8-a715-4abd-ae03-e01832dee2cd",
+            "name": "get-a-blog",
+            "url": "{{base_url}}blog/64ef87be25477308fb288e65",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2023-08-30T18:41:57.723Z",
+            "modified": "2023-09-14T00:42:13.568Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "be0c9f46-8130-4199-ba48-1781ec0c1f6a",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "4d7f34e8-a715-4abd-ae03-e01832dee2cd",
+            "name": "get-blogs",
+            "url": "{{base_url}}blog",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-09-01T22:30:06.111Z",
+            "modified": "2023-09-01T22:30:24.474Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a8e98ac1-8bbc-4798-b4d6-81389e306213",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "4d7f34e8-a715-4abd-ae03-e01832dee2cd",
+            "name": "like-a-blog",
+            "url": "{{base_url}}blog/likes",
+            "method": "PUT",
+            "sortNum": 150000,
+            "created": "2023-09-02T02:01:52.527Z",
+            "modified": "2023-09-14T00:40:35.235Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"blog_id\": \"64ef87be25477308fb288e65\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDI1NTU2ODRhZTc4MjRkY2M2ZWY4MCIsImlhdCI6MTY5NDY1MTk2NSwiZXhwIjoxNjk0NzM4MzY1fQ.m0cTw2Awejmd9HX8eOu1TSn_kKdw1d9TtZhzVKOT6xw"
+            },
+            "tests": []
+        },
+        {
+            "_id": "0e2e7576-f430-40b3-af4c-28ab4d65a1bd",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "4d7f34e8-a715-4abd-ae03-e01832dee2cd",
+            "name": "dislike-a-blog",
+            "url": "{{base_url}}blog/dislikes",
+            "method": "PUT",
+            "sortNum": 155000,
+            "created": "2023-09-14T00:20:59.220Z",
+            "modified": "2023-09-14T00:44:02.127Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"blog_id\": \"64ef87be25477308fb288e65\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDI1NTc1ODRhZTc4MjRkY2M2ZWY4MyIsImlhdCI6MTY5NDY1MjE4MCwiZXhwIjoxNjk0NzM4NTgwfQ.GeM1C6L80t_00ZW0y5ZoT3DWSzRngp36nuy5VxofGxg"
+            },
+            "tests": []
+        },
+        {
+            "_id": "fc2ef09e-39bd-4753-b549-dd586d089344",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "4d7f34e8-a715-4abd-ae03-e01832dee2cd",
+            "name": "delete-blog",
+            "url": "{{base_url}}blog/64ea8117175d0c58a5f2826b",
+            "method": "DELETE",
+            "sortNum": 160000,
+            "created": "2023-09-01T22:34:01.252Z",
+            "modified": "2023-09-01T22:35:12.646Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0ZTJhZmYzNDdiMTcyNDdiZWE3OWNlYyIsImlhdCI6MTY5MzYwNzYyMiwiZXhwIjoxNjkzNjk0MDIyfQ.T36oV5ETqg9FKxXbRTmz-jhlXFlP4Lf7ne8VQx7b01c"
+            },
+            "tests": []
+        },
+        {
+            "_id": "019cded7-3a36-43bb-8ba5-d73a160953b0",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "88a1f77e-c511-4867-8918-6f3f6fa55028",
+            "name": "create-category",
+            "url": "{{base_url}}category",
+            "method": "POST",
+            "sortNum": 170000,
+            "created": "2023-09-16T22:21:38.387Z",
+            "modified": "2024-01-11T18:30:13.361Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "fashion"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDI1NTU2ODRhZTc4MjRkY2M2ZWY4MCIsImlhdCI6MTcwNDk5NzY1NSwiZXhwIjoxNzA1MDg0MDU1fQ.EQEp3mFjM4pazsvKJpzwcKcIA5NGoosZdIQqMSPUCnw"
+            },
+            "tests": []
+        },
+        {
+            "_id": "3348b69d-a3d5-4238-8466-19a476521168",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "88a1f77e-c511-4867-8918-6f3f6fa55028",
+            "name": "show-categories",
+            "url": "{{base_url}}category",
+            "method": "GET",
+            "sortNum": 175000,
+            "created": "2023-09-16T22:50:20.022Z",
+            "modified": "2023-09-16T22:50:47.205Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9cae6c4a-dc4b-4e62-97e2-2ed70f074fce",
+            "colId": "74c0d826-c71d-41d7-9a7e-fafeafa47d2d",
+            "containerId": "88a1f77e-c511-4867-8918-6f3f6fa55028",
+            "name": "update-category",
+            "url": "{{base_url}}category/65062f659c967efb2da8f310",
+            "method": "PUT",
+            "sortNum": 180000,
+            "created": "2023-09-16T22:46:20.158Z",
+            "modified": "2023-09-16T22:48:13.123Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "books"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDI1NTU2ODRhZTc4MjRkY2M2ZWY4MCIsImlhdCI6MTY5NDkwMzA1NSwiZXhwIjoxNjk0OTg5NDU1fQ.VVECpr-2zWbaMH53spqOJQ1F8z2Fvm5ry3sEBP5jn7s"
+            },
+            "tests": []
+        }
+    ]
+}
